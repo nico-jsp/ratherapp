@@ -1,38 +1,119 @@
+
+
 .App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100%;
+}
+
+.App .card {
+  max-width: 70%;
+  width: 100%;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+label.button {
+  /* display: block; */
+  /* text-align: left; */
+  padding: 15px;
+  margin-bottom: 5px;
+  font-size: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.singleOption {
+  width: 46%;
+  height: 50px;
+  padding: 15px 20px;
+  margin: 10px;
+  box-shadow: 0 0 2px black;
+}
+
+@media (max-width: 614px) {
+  .singleOption {
+    width: 100%;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.select {
+  background-color: rgb(0, 207, 35);
   color: white;
+  box-shadow: 0 0 1px black;
 }
 
-.App-link {
-  color: #61dafb;
+.wrong {
+  background-color: rgb(233, 0, 0);
+  color: white;
+  box-shadow: 0 0 1px black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+.card{
+  /* align-items: center; */
+justify-content: center;}
+
+.buttonQuestion {
+
+  display: flex;
+
+  width: 100%;
+justify-content: center;
+
+  padding: 15px;
+  margin-bottom: 5px;
+  font-size: 20px;
+  color: black;
+  border: ivory;
+  background-color: white;
+  
+}
+
+/* .buttonQuestion:hover {
+
+  display: flex;
+
+  width: 100%;
+justify-content: center;
+
+  padding: 15px;
+  margin-bottom: 5px;
+  font-size: 20px;
+  color: black;
+  border: ivory;
+  background-color: greenyellow;
+  
+} */
+
+.buttonQuestion:active{
+
+  display: flex;
+
+  width: 100%;
+justify-content: center;
+
+  padding: 15px;
+  margin-bottom: 5px;
+  font-size: 20px;
+  color: black;
+  border: ivory;
+  background-color: greenyellow;
+  
+}
+
+
+.button{
+  width: 30%;
+}
+.image{
+  max-width: 70%;
+  /* max-height: min-content; */
+}
+
+label.radio+.radio {
+  margin-left: 0;
+}
+
+label.radio input {
+  margin-right: 10px;
 }
